@@ -9,7 +9,6 @@ import javax.validation.constraints.Size;
 @Entity
 public class HuluRegistration {
 
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private String email;
 
     @Size(min = 1)
@@ -30,6 +29,7 @@ public class HuluRegistration {
     private String gender;
 
     @javax.persistence.Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private String userId;
 
     public HuluRegistration() {
